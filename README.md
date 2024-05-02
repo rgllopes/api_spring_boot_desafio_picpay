@@ -15,7 +15,7 @@
 
 - Clonar repositório git:
 ```
-git clone https://github.com/giuliana-bezerra/picpay-desafio-backend.git
+git clone git@github.com:rgllopes/api_spring_boot_desafio_picpay.git
 ```
 - Executar o Kafka:
 ```
