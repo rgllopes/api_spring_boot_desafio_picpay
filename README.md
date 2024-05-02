@@ -27,7 +27,7 @@ docker-compose up
 ## API
 
 POST
-- url: localhost:8080/transaction
+- localhost:8080/transaction
 ```
 request
 {
