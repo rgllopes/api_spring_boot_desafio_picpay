@@ -26,15 +26,17 @@ docker-compose up
 
 ## API
 
-- http :8080/transaction value=100.0 payer=1 payee=200
+POST
+- url: localhost:8080/transaction
 ```
-HTTP/1.1 200
-Connection: keep-alive
-Content-Type: application/json
-Date: Tue, 05 Mar 2024 19:07:52 GMT
-Keep-Alive: timeout=60
-Transfer-Encoding: chunked
+request
+{
+     "value": 100.0
+     "payer": 1
+     "payee": 2
+}
 
+response
 {
     "createdAt": "2024-03-05T16:07:50.749774",
     "id": 20,
@@ -44,15 +46,10 @@ Transfer-Encoding: chunked
 }
 ```
 
-- http :8080/transaction
+GET
+- localhost:8080/transaction
 ```
-HTTP/1.1 200
-Connection: keep-alive
-Content-Type: application/json
-Date: Tue, 05 Mar 2024 19:08:13 GMT
-Keep-Alive: timeout=60
-Transfer-Encoding: chunked
-
+response
 [
     {
         "createdAt": "2024-03-05T16:07:50.749774",
